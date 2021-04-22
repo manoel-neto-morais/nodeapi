@@ -1,4 +1,5 @@
 const mongoose = require('mongoose')
+//importação do mongoose-paginate que ajuda a criar paginação na amostra da requisição
 const mongoosePaginate = require('mongoose-paginate')
 
 
@@ -23,6 +24,7 @@ const productSchema = new mongoose.Schema({
     }
 })
 
+//chamada do plugin do mongoose-paginate
 productSchema.plugin(mongoosePaginate)
 
 //registro do novo model
